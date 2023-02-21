@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 0 0 20px #222;
+    margin: 0;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2vw;
+    height: 100vh;  
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-1,
+.col-3{
+    justify-content: space-between;
+}
+
+.col-1{
+    align-items: flex-start;
+}
+
+.col-2{
+    align-items: center;
+    justify-content: center;
+}
+
+.col-3{
+    align-items: flex-end;
+}
+
+.col-2 > h3{
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.col-2 > h2{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.google-icon-container{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.google-icon{
+    width: 100%;
+}
+
+.bank-hols,
+.exchange,
+.para-container{
+    background-color: rgba(50, 50, 50, .4);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.years-select{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.years-select-box{
+    background-color: rgba(200, 200, 200, .3);
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    text-shadow: 0 0 20px #222;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: .875rem;
+}
+
+option{
+    background-color: #222;
+    font-size: .875rem;
+    padding: 5px;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.years-select > h3{
+    margin: 5px;
+}
+
+.pound > h3,
+.currency{
+    margin: 0;
+}
+
+.holiday{
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    width: 120px;
+    margin: 0;
+}
+.event{
+    margin: 0 0 10px 5px;
+}
+
+.pound{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pound-icon{
+    width: 2em;
+    height: 2em;
+    margin-bottom: -.7em;
+}
+
+.currencies,
+.bh-container{
+    margin-left: 10px;  
+}
+
+.currency-emoji{
+    text-shadow: none;
+}
+
+p{
+    margin: 0;
+    font-size: .875rem;
+}
+
+h3{
+    font-size: .875rem;
+}
+
+@media (min-width: 820px){
+    p,
+    h3,
+    option,
+    .years-select-box{
+        font-size: 1rem;
+    }
+    .col-2 > h3{
+        font-size: 2rem;
+    }
+    
+    .col-2 > h2{
+        font-size: 3rem;
+    }
+
+}
+
+@media (min-width: 1000px){
+    p,
+    h3,
+    option,
+    .years-select-box{
+        font-size: 1.125rem;
+    }
+
+}
+
+
+
