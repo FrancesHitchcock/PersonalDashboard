@@ -2,7 +2,7 @@
 
 ## About The Project
 
-The personal dashboard was created as a development of the shared capstone project which was used to demonstrate and practise Promise rejection.  This exercise was used as an opportunity to explore additional APIs including:
+The personal dashboard was created as a development of the shared capstone project which was used to demonstrate and practise Promise rejection. It is designed as a Chrome extension.  This exercise was used as an opportunity to explore additional APIs including:
 
 - UK Bank Holidays JSON file https://www.gov.uk/bank-holidays.json 
 - Joke API https://sv443.net/jokeapi/v2/
